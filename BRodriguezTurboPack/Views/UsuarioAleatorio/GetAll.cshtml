@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/GetAllRandom.js"></script>
+
+<h1>USUARIOS</h1>
+<br />
+<div>
+    <a class="btn btn-outline-info" id="btnClear" onclick="Clear()">Limpiar</a>
+    <a class="btn btn-success" style="float:right" onclick="GetAll()">AGREGAR NUEVO USUARIO</a>
+</div>
+<hr />
+
+<div class="table table-responsive">
+    <table class="table table-hover" id="tblUsuario">
+        <thead>
+            <tr>
+                <th class="text-center">NOMBRE</th>
+                <th class="text-center">EMAIL</th>
+                <th class="text-center">DIRECCION</th>
+                <th class="text-center">GENERO</th>
+                <th class="text-center">FOTO PERFIL</th>
+            </tr>
+        </thead>
+        <tbody id="tblUsuarioBody">
+            
+        </tbody>
+    </table>
+</div>
